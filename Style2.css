@@ -1,0 +1,132 @@
+* { 
+margin: 0;
+padding:0;
+box-sizing:border-box;
+} 
+
+body { 
+background:#efefef !important;} 
+
+/*Section Menu*/ 
+
+#menu{ 
+background:white;
+height:100%;
+border-top-right-radius: 40px;
+border-bottom-right-radius: 40px;}
+
+
+
+#logo img { 
+text-align:center;
+margin-top:15px;
+margin-bottom:70px;}
+
+
+nav { 
+display:flex;
+justify-content:center;
+align-items:center;}
+
+
+nav ul { 
+list-style-type:none;
+text-align:center;  
+}
+
+nav li { 
+margin-bottom: 50px;}
+
+nav li a { 
+text-decoration: none;
+color:  #575f6b;
+transition: all 800ms ease;}
+
+
+
+nav li a:hover { 
+text-decoration: none;
+color:orange;}
+
+
+
+
+/* Section Burger */ 
+#food { 
+height:100vh;
+}
+
+
+.grid-container{
+    width: 100%;
+    height:100vh;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(9,11.11%);
+    grid-template-areas: 
+      "img img"
+      "img img"
+      "img img"
+      "img img"
+      "img img"
+      "ingredient info"
+      "ingredient info"
+      "ingredient info"
+      "ingredient info" ;
+}
+.grid-item{
+    background-color: #575f6b;
+}
+.item-1{
+    grid-area: img;
+    background-image: url(images/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    
+ }
+.item-2{grid-area: ingredient;
+    border-top-left-radius: 6em 3em;
+}
+.item-3{grid-area: info;
+    border-top-right-radius: 6em 3em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Order */
+
+
+#order { 
+height:100%;
+background:white;
+display: flex;
+align-items: center; }
+
+
+.checkout h5 { 
+text-align:center;
+color: #575f6b; }
