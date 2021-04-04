@@ -2,10 +2,11 @@
 margin: 0;
 padding:0;
 box-sizing:border-box;
+font-family: 'Nunito Sans', sans-serif;
 } 
 
 body { 
-background:#efefef !important;} 
+background:#ffeade !important;} 
 
 /*Section Menu*/ 
 
@@ -13,7 +14,9 @@ background:#efefef !important;}
 background:white;
 height:100%;
 border-top-right-radius: 40px;
-border-bottom-right-radius: 40px;}
+border-bottom-right-radius: 40px;
+box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25) ;
+z-index: 1 ;}
 
 
 
@@ -56,41 +59,125 @@ color:orange;}
 height:100vh;
 }
 
-
-.grid-container{
-    width: 100%;
-    height:100vh;
-    display: grid;
-    grid-gap: 1px;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(9,11.11%);
-    grid-template-areas: 
-      "img img"
-      "img img"
-      "img img"
-      "img img"
-      "img img"
-      "ingredient info"
-      "ingredient info"
-      "ingredient info"
-      "ingredient info" ;
+.burger{
+    text-align: center;
 }
-.grid-item{
-    background-color: #575f6b;
-}
-.item-1{
-    grid-area: img;
-    background-image: url(images/4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
+#food .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px ;
+    margin: 0px ;
     
- }
-.item-2{grid-area: ingredient;
-    border-top-left-radius: 6em 3em;
+
 }
-.item-3{grid-area: info;
-    border-top-right-radius: 6em 3em;}
+.lower-half{
+    height:60.5vh;
+}
+.ingredient ,.benefits{
+    width: 50%;
+    padding: 40px 65px;
+    border-top-left-radius: 4rem 2rem;
+    background-color: white;
+    
+}
+.benefits{
+    border-top-right-radius: 4rem 2rem;
+    border-top-left-radius: 0rem 0rem;
+    margin-right: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4{
+   background-color: #ffeade ;
+   margin-right: 30px;
+   width: 100%;
+   border-radius: 50px ;
+   height: 150px;
+   
+}
+
+.review{
+    display:flex;
+    letter-spacing: 1px;
+    
+}
+.note span{
+    margin: 0px 10px;
+}
+.star{
+    margin:5px;
+    margin-right: 15px;
+    padding: 1px;
+    color: #f98c10;
+}
+.note{
+    opacity: 0.6;
+    font-weight: 650;
+    font-size: 14px;
+    margin-top: 4px;
+}
+h2.title{
+    font-family: 'Mulish', sans-serif;
+    margin: 15px 0px;
+    padding-left: 10px;
+    border-left: 5px solid #f98c10;
+}
+.introduction{
+    font-size:13px ;
+}
+.info{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 12px 0px;
+    margin-top: 10px;
+    background-color: #f98c10;
+    color: #ffeade;
+    
+}
+.unit-1,.unit-2{
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffeade;
+    justify-content: center;
+    
+}
+.unit-1{
+    font-size: 14px;
+    margin:20px 20px;
+    
+   
+}
+.unit-2{
+    font-size: 14px;
+    margin: 20px 10px;
+}
+.benefits span{
+    opacity: 0.65;
+}
+
+.checkbox{
+    margin-bottom: 5px;
+}
+label{
+    font-size: 15px;
+    
+}
+.option{
+    margin-top:20px ;
+}
+input [type="checkbox"]{
+   margin-top: 15px;
+}
+
+
 
 
 
